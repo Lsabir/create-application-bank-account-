@@ -1,0 +1,39 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: account-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret-key: super-secret-key-change-me-super-secret-key-change-me
+  datasource:
+    url: jdbc:mysql://localhost:3307/account_db
+    username: account
+    password: account
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui
+
+logging:
+  level:
+    root: INFO
+
+

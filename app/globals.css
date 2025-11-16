@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Light Mode Palette: Dark base with teal accent */
+    --background: 220 10% 98%; /* Very light grey */
+    --foreground: 220 10% 15%; /* Dark charcoal for text */
+
+    --card: 0 0% 100%; /* White for cards */
+    --card-foreground: 220 10% 15%; /* Dark charcoal for text on cards */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 15%;
+
+    --primary: 170 60% 40%; /* Muted Teal */
+    --primary-foreground: 0 0% 98%; /* Light grey for text on primary */
+
+    --secondary: 220 10% 90%; /* Light grey for secondary elements */
+    --secondary-foreground: 220 10% 25%; /* Medium charcoal */
+
+    --muted: 220 10% 90%; /* Light grey */
+    --muted-foreground: 220 10% 40%; /* Medium grey */
+
+    --accent: 170 60% 50%; /* Brighter Teal */
+    --accent-foreground: 220 10% 15%; /* Dark charcoal */
+
+    --destructive: 0 84.2% 60.2%; /* Standard red */
+    --destructive-foreground: 0 0% 98%; /* White */
+
+    --border: 220 10% 80%; /* Light grey border */
+    --input: 220 10% 80%;
+    --ring: 170 60% 40%; /* Primary Teal ring */
+
+    --success: 142.1 76.2% 36.3%; /* Standard green */
+    --success-foreground: 220 10% 15%; /* White */
+
+    --warning: 48 96% 50%; /* Standard orange/yellow */
+    --warning-foreground: 220 10% 15%; /* Dark charcoal */
+
+    --info: 200 60% 40%; /* A softer blue for info */
+    --info-foreground: 0 0% 98%; /* White */
+  }
+
+  .dark {
+    /* Dark Mode Palette: Deep grey base with teal accent */
+    --background: 220 10% 15%; /* Dark charcoal */
+    --foreground: 220 20% 90%; /* Light grey */
+
+    --card: 220 10% 20%; /* Darker charcoal for cards */
+    --card-foreground: 220 20% 90%;
+
+    --popover: 220 10% 20%;
+    --popover-foreground: 220 20% 90%;
+
+    --primary: 170 60% 40%; /* Muted Teal */
+    --primary-foreground: 220 10% 15%; /* Dark charcoal */
+
+    --secondary: 220 10% 25%; /* Slightly lighter charcoal */
+    --secondary-foreground: 220 20% 90%;
+
+    --muted: 220 10% 30%; /* Medium charcoal */
+    --muted-foreground: 220 10% 70%; /* Lighter grey */
+
+    --accent: 170 60% 50%; /* Brighter Teal */
+    --accent-foreground: 220 10% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 10% 35%; /* Mid-tone charcoal */
+    --input: 220 10% 35%;
+    --ring: 170 60% 40%;
+
+    --success: 142.1 76.2% 36.3%;
+    --success-foreground: 220 20% 90%;
+
+    --warning: 48 96% 50%;
+    --warning-foreground: 220 20% 90%;
+
+    --info: 200 60% 40%;
+    --info-foreground: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

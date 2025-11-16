@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+  account-mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: account_db
+      MYSQL_USER: account
+      MYSQL_PASSWORD: account
+    ports:
+      - "3307:3306"
+    volumes:
+      - account-mysql-data:/var/lib/mysql
+
+  document-mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: document_db
+      MYSQL_USER: document
+      MYSQL_PASSWORD: document
+    ports:
+      - "3308:3306"
+    volumes:
+      - document-mysql-data:/var/lib/mysql
+
+volumes:
+  account-mysql-data:
+  document-mysql-data:
+
+
+
+
+
+
