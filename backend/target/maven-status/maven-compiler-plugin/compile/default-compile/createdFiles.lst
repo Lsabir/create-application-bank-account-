@@ -1,0 +1,12 @@
+com/bank/BankApplication.class
+com/bank/entity/DocumentFile$DocumentType.class
+com/bank/entity/BankAccount.class
+com/bank/controller/BankAccountController.class
+com/bank/config/SecurityConfig.class
+com/bank/repository/DocumentFileRepository.class
+com/bank/entity/DocumentFile.class
+com/bank/repository/BankAccountRepository.class
+com/bank/service/BankAccountService.class
+com/bank/config/WebConfig.class
+com/bank/controller/DocumentFileController.class
+com/bank/service/DocumentFileService.class

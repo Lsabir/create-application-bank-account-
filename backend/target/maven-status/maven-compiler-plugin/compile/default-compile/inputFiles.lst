@@ -1,0 +1,11 @@
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/BankApplication.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/repository/DocumentFileRepository.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/entity/BankAccount.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/config/WebConfig.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/repository/BankAccountRepository.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/config/SecurityConfig.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/entity/DocumentFile.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/controller/BankAccountController.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/service/DocumentFileService.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/controller/DocumentFileController.java
+/Users/abdessamadsaber/Desktop/bank-account-creation-123/backend/src/main/java/com/bank/service/BankAccountService.java
